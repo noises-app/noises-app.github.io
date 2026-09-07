@@ -42,7 +42,7 @@ img, svg { display: block; }
 }
 
 /* Hero */
-.hero { position: relative; overflow: hidden; min-height: 82vh; display: flex; flex-direction: column; }
+.hero { position: relative; overflow: hidden; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
 .hero-inner {
   max-width: var(--maxw); margin: 0 auto; padding: 8vh 24px 0; text-align: center;
   position: relative; z-index: 2;
