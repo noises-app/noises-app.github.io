@@ -18,4 +18,15 @@
   }, { threshold: 0.12 });
 
   revealables.forEach(function (el) { io.observe(el); });
+
+  // Safety net: if anything is still hidden after full load (e.g. observer
+  // missed an element), reveal it so no content is ever permanently invisible.
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      document.querySelectorAll(".reveal:not(.is-visible)").forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight) { el.classList.add("is-visible"); }
+      });
+    }, 300);
+  });
 })();
