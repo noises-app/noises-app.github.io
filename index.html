@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noises — Noise that never repeats</title>
+  <meta name="description" content="Endless colored noise, synthesized live. Focus, relax, or fall asleep. Coming soon to the App Store." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="top">
+    <a class="wordmark" href="#top">Noises</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#features">Features</a>
+      <span class="pill" aria-label="Coming soon">Coming soon</span>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <h1 id="hero-title" class="reveal">Noise that never repeats.</h1>
+        <p class="hero-sub reveal">Endless colored noise, synthesized live. Focus, relax, or fall asleep.</p>
+        <span class="badge reveal" aria-label="Coming soon to the App Store">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.5 3c.1 1.2-.4 2.4-1.1 3.2-.8.9-2 1.6-3.2 1.5-.1-1.2.5-2.4 1.2-3.2.8-.9 2.1-1.5 3.1-1.5zM19 17.3c-.5 1.2-.8 1.7-1.5 2.7-1 1.5-2.4 3.3-4.1 3.3-1.5 0-1.9-1-4-1-2 0-2.5 1-4 1-1.7 0-3-1.6-4-3.1-2.8-4.2-3.1-9.1-1.4-11.7 1.2-1.9 3.1-3 4.9-3 1.8 0 2.9 1 4.4 1 1.4 0 2.3-1 4.4-1 1.6 0 3.3.9 4.5 2.4-4 2.2-3.3 7.9.3 9.4z"/></svg>
+          Coming soon to the App Store
+        </span>
+      </div>
+      <svg class="hero-art" viewBox="0 0 1440 320" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="hill-back" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#5847b5"/><stop offset="1" stop-color="#2a2060"/>
+          </linearGradient>
+          <linearGradient id="hill-front" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#7d5cff"/><stop offset="1" stop-color="#43308f"/>
+          </linearGradient>
+        </defs>
+        <g class="stars">
+          <circle cx="180" cy="70" r="1.6"/><circle cx="420" cy="42" r="1.2"/>
+          <circle cx="700" cy="80" r="1.8"/><circle cx="960" cy="50" r="1.2"/>
+          <circle cx="1180" cy="72" r="1.6"/><circle cx="1320" cy="40" r="1.2"/>
+          <circle cx="90" cy="120" r="1.2"/><circle cx="560" cy="110" r="1.2"/>
+          <circle cx="1080" cy="120" r="1.4"/>
+        </g>
+        <path class="hill hill-back" d="M0 210 C300 140 560 240 820 190 C1080 140 1280 210 1440 185 L1440 320 L0 320 Z" fill="url(#hill-back)" opacity=".65"/>
+        <path class="hill hill-front" d="M0 255 C360 200 640 285 940 235 C1160 200 1300 250 1440 240 L1440 320 L0 320 Z" fill="url(#hill-front)"/>
+      </svg>
+    </section>
+    <section class="features" id="features" aria-labelledby="features-title">
+      <h2 id="features-title" class="section-title reveal">Made for focus, calm, and sleep</h2>
+      <ul class="feature-grid">
+        <li class="feature reveal">
+          <div class="swatches" aria-hidden="true">
+            <span style="background:#d7d7dd"></span><span style="background:#ff6fa5"></span>
+            <span style="background:#a06a3f"></span><span style="background:#e2564a"></span>
+            <span style="background:#8a4dff"></span><span style="background:#24c46e"></span>
+            <span style="background:#8b8e95"></span>
+          </div>
+          <h3>Seven noise colors</h3>
+          <p>White, Pink, Brown, Red, Violet, Green, and Gray — each with its own character.</p>
+        </li>
+        <li class="feature reveal">
+          <h3>Endless &amp; non-repeating</h3>
+          <p>Synthesized live by an in-app audio graph, so it never loops or repeats.</p>
+        </li>
+        <li class="feature reveal">
+          <h3>Tune the sound</h3>
+          <p>A 2D pad shapes each color's timbre — soft ↔ bright and deep ↔ clear, in real time.</p>
+        </li>
+        <li class="feature reveal">
+          <h3>Countdown timer</h3>
+          <p>Set hours and minutes; playback stops automatically when the timer ends.</p>
+        </li>
+        <li class="feature reveal">
+          <h3>Remembers your setup</h3>
+          <p>Your last color and timer are saved on device and restored next launch.</p>
+        </li>
+        <li class="feature reveal">
+          <h3>AirPlay on iOS</h3>
+          <p>Route playback to HomePod, Apple TV, or AirPlay speakers.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="cta" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="section-title reveal">Quiet is coming.</h2>
+      <p class="cta-sub reveal">Noises is launching soon on iOS and Android.</p>
+      <span class="badge reveal" aria-label="Coming soon to the App Store">
+        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.5 3c.1 1.2-.4 2.4-1.1 3.2-.8.9-2 1.6-3.2 1.5-.1-1.2.5-2.4 1.2-3.2.8-.9 2.1-1.5 3.1-1.5zM19 17.3c-.5 1.2-.8 1.7-1.5 2.7-1 1.5-2.4 3.3-4.1 3.3-1.5 0-1.9-1-4-1-2 0-2.5 1-4 1-1.7 0-3-1.6-4-3.1-2.8-4.2-3.1-9.1-1.4-11.7 1.2-1.9 3.1-3 4.9-3 1.8 0 2.9 1 4.4 1 1.4 0 2.3-1 4.4-1 1.6 0 3.3.9 4.5 2.4-4 2.2-3.3 7.9.3 9.4z"/></svg>
+        Coming soon to the App Store
+      </span>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Noises © 2026</p>
+    <a href="https://github.com/noises-app/noises-app.github.io" target="_blank" rel="noopener">View on GitHub</a>
+  </footer>
+  <script src="main.js" defer></script>
+</body>
+</html>
